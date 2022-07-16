@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- LETRAS DE GOOGLE -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <title>Iniciar Sesión...</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__contlista"><a class="header__contlista" href="../index.html">Inicio...</a></li>
+                    <li class="header__contlista"><a class="header__contlista" href="leyendas.html">Leyendas...</a></li>
+                    <li class="header__contlista"><a class="header__contlista" href="contacto.html">Contacto...</a></li>
+                    <li class="header__contlista"><a class="header__contlista" href="#">Iniciar Sesión...</a></li>
+                    <li class="header__contlista"><a class="header__contlista" href="creepypastas.html">Creepypastas...</a></li>
+                    <li class="header__contlista"><a class="header__contlista" href="galeria-img.html">Galería de Imágenes...</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main -->
+        <main>
+            <section>
+                <article class="ingresa-mimundo">
+                    <h1>Ingresa a mi mundo...</h1>
+                </article>
+            </section>
+            <section class="iniciarsesion">
+                <h2>Iniciar Sesión:</h2>
+                <form action="/formulario" method="POST" class="iniciarsesion__formulario">
+                    <div class="ini-ses__correo"><label for="carne">Correo Electrónico:</label>
+                    <input name="carne" type="email" required></div>
+                    <div class="ini-ses__clave"><label for="colonia">Contraseña:</label>
+                    <input name="colonia" type="password" required></div>
+                    <button class="ini-ses__boton" type="submit">Enviar...</button>
+                </form>
+            </section>
+            <section class="sincuenta">
+                <div><span>¿No tienes una cuenta?...</span></div>
+                <div class="sincuenta__unete"><span>Únetenos...</span></div>
+                <img src="../recursos/ven.jpg" class="sincuenta__imagen" alt="img de ven" title="acercate"><!-- imagen de manooo!!! -->
+            </section>
+            <section class="registro">
+                <h2>Registrarse:</h2>
+                <form class="registro__formulario" action="/formulario">
+                    <div class="registro__usuario"><label for="usuario">Usuario:</label>
+                    <input type="text" name="usuario" required></div>
+                    <div class="registro__nombre"><label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" required></div>
+                    <div class="registro__apellido"><label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" required></div>
+                    <div class="registro__correo"><label for="correo">Correo Electrónico:</label>
+                    <input type="email" name="correo" required></div>
+                    <div class="registro__clave"><label for="clave">Contraseña:</label>
+                    <input type="password" name="clave" required></div>
+                    <div class="registro__confirmar"><label for="confirmar">Confirmar Contraseña:</label>
+                    <input type="password" name="confirmar" required></div>
+                    <input class="registro__enviar" type="submit">
+                </form>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer>
+            <p><i>Estructura, Personalización, Navegabilidad y la idea de la página misma, creada por el usuario: FabianCreepy4.</i></p>
+            <p><i>La propiedad de la pág. Sangre Hélida pertenece enteramente a su creador: el usuario FabianCreepy4.</i></p>
+            <p><i>Imágenes/fotografías sacadas de/hechas por: fondo, Sanndy Anghan (Pexel); The Rake, Kenshi Panchito (Pinterest);
+            Lobizón, sacada de Oremba'e; Herobrine, sacada de Tónica; Luz mala, sacada de Aminoapps; mano (Ingresa a mi Mundo...) por WallpaperManiac</i></p>
+        </footer>
+    </body>
+</html>
