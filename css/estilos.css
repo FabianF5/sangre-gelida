@@ -147,6 +147,10 @@ footer {
 .sincuenta__imagen {
     width: 100%;
 }
+.registro {
+    display: flex;
+    flex-wrap: wrap;
+}
 .registro__formulario {
     margin: 100px 0 0 0;
 }
@@ -169,7 +173,13 @@ footer {
     margin: 0 0 55px 610px;
 }
 .registro__enviar {
-    margin: 0 0 55px 1090px;
+    margin: 0 0 55px 1050px;
+}
+button {
+    padding: 5px 25px;
+    background-color: rgb(29, 29, 56);
+    border: rgb(85, 143, 143);
+    border-radius: 5%;
 }
 /* leyendas */
 .ley-arg__mapa {
