@@ -65,9 +65,9 @@ footer {
     text-decoration: none;
 }
 .main__banner {
-    width: 1315px;
-    height: 550px;
     display: flex;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -129,58 +129,63 @@ footer {
     justify-content: space-around;
 }
 /* inicio-sesion */
-.ingresa-mimundo {
-    margin: 70px 0 0 0;
-}
-.iniciarsesion {
-    text-align: center;
-    margin: 70px 0 0 0;
-}
-.sincuenta {
-    text-align: center;
-    margin: 80px 0 0 0;
-    font-size: 40px;
-}
-.sincuenta__unete {
-    margin: 0 0 70px 0;
-}
-.sincuenta__imagen {
-    width: 100%;
-}
-.registro {
-    display: flex;
-    flex-wrap: wrap;
-}
-.registro__formulario {
-    margin: 100px 0 0 0;
-}
-.registro__usuario {
-    margin: 0 0 55px 120px;
-}
-.registro__nombre {
-    margin: 0 0 55px 250px;
-}
-.registro__apellido {
-    margin: 0 0 55px 370px;
-}
-.registro__correo {
-    margin: 0 0 55px 400px;
-}
-.registro__clave {
-    margin: 0 0 55px 580px;
-}
-.registro__confirmar {
-    margin: 0 0 55px 610px;
-}
-.registro__enviar {
-    margin: 0 0 55px 1050px;
-}
-button {
-    padding: 5px 25px;
-    background-color: rgb(29, 29, 56);
-    border: rgb(85, 143, 143);
-    border-radius: 5%;
-}
+    .ingresa-mimundo {
+        margin: 70px 0 0 0;
+    }
+    .ini-ses__correo {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .ini-ses__clave {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .ini-ses__boton {
+        margin: 10px;
+    }
+    .sincuenta {
+        text-align: center;
+        margin: 80px 0 0 0;
+        font-size: 40px;
+    }
+    .sincuenta__unete {
+        margin: 0 0 70px 0;
+    }
+    .sincuenta__imagen {
+        width: 100%;
+    }
+    .registro__formulario {
+        margin: 100px 0 0 0;
+    }
+    .registro__usuario {
+        margin: 0 0 55px 120px;
+    }
+    .registro__nombre {
+        margin: 0 0 55px 250px;
+    }
+    .registro__apellido {
+        margin: 0 0 55px 370px;
+    }
+    .registro__correo {
+        margin: 0 0 55px 400px;
+    }
+    .registro__clave {
+        margin: 0 0 55px 580px;
+    }
+    .registro__confirmar {
+        margin: 0 0 55px 610px;
+    }
+    .registro__enviar {
+        margin: 0 0 55px 1050px;
+    }
+    button {
+        padding: 5px 25px;
+        background-color: rgb(29, 29, 56);
+        border: rgb(85, 143, 143);
+        border-radius: 5%;
+    }
 /* leyendas */
 .ley-arg__mapa {
     display: flex;
@@ -286,6 +291,7 @@ button {
                             "carretera"
                             "puente-colgante";
     }
+    /* index modificado */
     .main__banner {
         width: 415px;
         height: 170px;
@@ -326,6 +332,86 @@ button {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+    }
+    /* inicio-sesion modificado */
+    .ingresa-mimundo {
+        margin: 70px 0 0 0;
+    }
+    .iniciarsesion {
+        text-align: center;
+        margin: 70px 0 0 0;
+    }
+    .sincuenta {
+        text-align: center;
+        margin: 80px 0 0 0;
+        font-size: 40px;
+    }
+    .sincuenta__unete {
+        margin: 0 0 70px 0;
+    }
+    .sincuenta__imagen {
+        width: 100%;
+    }
+    .registro__formulario {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "registro__usuario"
+                            "registro__nombre"
+                            "registro__apellido"
+                            "registro__correo"
+                            "registro__clave"
+                            "registro__confirmar"
+                            "boton";
+    }
+    .registro__usuario {
+        display: grid;
+        grid-area: registro__usuario;
+    }
+    .registro__nombre {
+        display: grid;
+        grid-area: registro__nombre;
+    }
+    .registro__apellido {
+        display: grid;
+        grid-area: registro__apellido;
+    }
+    .registro__correo {
+        display: grid;
+        grid-area: registro__correo;
+    }
+    .registro__clave {
+        display: grid;
+        grid-area: registro__clave;
+    }
+    .registro__confirmar {
+        display: grid;
+        grid-area: registro__confirmar;
+    }
+    button {
+        display: grid;
+        grid-area: boton;
+    }
+    /* Contactos modificado */
+    .contact-imagen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-imagen__imagen {
+        width: 250px;
+    }
+    .contact__redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(33, 33, 41);
+        list-style: none;
+    }
+    .contact-redes__icono {
+        width: 25px;
     }
     /* footer modificado */
     footer {
