@@ -19,32 +19,81 @@
         <title>Galería de Imágenes...</title>
     </head>
     <body>
+        <!-- header -->
         <header>
-            <nav class="header__nav">
-                <ul class="header__ul">
-                    <li class="header__contlista"><a class="header__contlista" href="../index.html">Inicio...</a></li>
-                    <li class="header__contlista"><a class="header__contlista" href="leyendas.html">Leyendas...</a></li>
-                    <li class="header__contlista"><a class="header__contlista" href="contacto.html">Contacto...</a></li>
-                    <li class="header__contlista"><a class="header__contlista" href="inicio-sesion.html">Iniciar Sesión...</a></li>
-                    <li class="header__contlista"><a class="header__contlista" href="creepypastas.html">Creepypastas...</a></li>
-                    <li class="header__contlista"><a class="header__contlista" href="#">Galería de Imágenes...</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg d-inline-flex p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../recursos/favicon.ico" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__ul">
+                        <li class="nav-item header__contlista">
+                            <a class="nav-link header__contlista" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item header__contlista">
+                            <a class="nav-link header__contlista" href="contacto.html">Contactos...</a>
+                        </li>
+                        <li class="nav-item header__contlista">
+                            <a class="nav-link header__contlista" href="leyendas.html">Leyendas...</a>
+                        </li>
+                        <li class="nav-item header__contlista">
+                            <a class="nav-link header__contlista" href="inicio-sesion.html">Iniciar Sesión...</a>
+                        </li>
+                        <li class="nav-item header__contlista">
+                            <a class="nav-link header__contlista" href="creepypastas.html">Creepypastas...</a>
+                        </li>
+                        <li class="nav-item header__contlista">
+                            <a class="nav-link header__contlista" href="#">Galería...</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
+        <!-- main -->
         <main>
             <section>
                 <h1>Galería de Imágenes...</h1>
             </section>
-            <section class="galeria__imagenes">
-                <div class="almamula"></div>
-                <div class="carretera"></div>
-                <div class="lobizonnegro"></div>
-                <div class="niebla"></div>
-                <div class="cielo-nocturno"></div>
-                <div class="puente-colgante"></div>
-                <div class="imagen-bosque"></div>
-            </section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../recursos/almamula.png" class="galeria__img d-block w-100" alt="almamula img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/carretera.jpg" class="galeria__img d-block w-100" alt="carretera img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/lobizonnegro.png" class="galeria__img d-block w-100" alt="lobizón img">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="../recursos/niebla-bosque.jpg" class="galeria__img d-block w-100" alt="niebla en bosque img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/noche-bosque.jpg" class="galeria__img d-block w-100" alt="cielo nocturno img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/puente-colgante.png" class="galeria__img d-block w-100" alt="puente colgante img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/bosque.jpg" class="galeria__img d-block w-100" alt="bosque img">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </main>
+        <!-- footer -->
         <footer>
             <p><i>Estructura, Personalización, Navegabilidad y la idea de la página misma, creada por el usuario: FabianCreepy4.</i></p>
             <p><i>La propiedad de la pág. Sangre Hélida pertenece enteramente a su creador: el usuario FabianCreepy4.</i></p>

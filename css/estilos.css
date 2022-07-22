@@ -14,7 +14,10 @@ header {
     position: sticky;
     top: 0px;
     background-color: rgb(20, 20, 39);
-    padding: 5px;
+}
+
+.header__contlista a {
+    color: rgb(92, 126, 155);
 }
 h1 {
     font-family: 'Berkshire Swash', cursive;
@@ -44,6 +47,13 @@ iframe {
     flex-wrap: wrap;
     justify-content: center;
 }
+button {
+    padding: 5px 25px;
+    background-color: rgb(29, 29, 56);
+    border: rgb(85, 143, 143);
+    border-radius: 5%;
+    font-family: 'Dancing Script', cursive;
+}
 footer {
     font-size: 20px;
     color: rgb(159, 192, 192);
@@ -54,15 +64,6 @@ footer {
     flex-wrap: wrap;
 }
 /* index */
-.header__ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-}
-.header__contlista a {
-    color: rgb(92, 126, 155);
-    text-decoration: none;
-}
 .main__banner {
     display: flex;
     width: 100%;
@@ -128,63 +129,57 @@ footer {
     justify-content: space-around;
 }
 /* inicio-sesion */
-    .ingresa-mimundo {
-        margin: 70px 0 0 0;
-    }
-    .ini-ses__correo {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-    }
-    .ini-ses__clave {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-    }
-    .ini-ses__boton {
-        margin: 10px;
-    }
-    .sincuenta {
-        text-align: center;
-        margin: 80px 0 0 0;
-        font-size: 40px;
-    }
-    .sincuenta__unete {
-        margin: 0 0 70px 0;
-    }
-    .sincuenta__imagen {
-        width: 100%;
-    }
-    .registro__formulario {
-        margin: 100px 0 0 0;
-    }
-    .registro__usuario {
-        margin: 0 0 55px 120px;
-    }
-    .registro__nombre {
-        margin: 0 0 55px 250px;
-    }
-    .registro__apellido {
-        margin: 0 0 55px 370px;
-    }
-    .registro__correo {
-        margin: 0 0 55px 400px;
-    }
-    .registro__clave {
-        margin: 0 0 55px 580px;
-    }
-    .registro__confirmar {
-        margin: 0 0 55px 610px;
-    }
-    .registro__enviar {
-        margin: 0 0 55px 1050px;
-    }
-    button {
-        padding: 5px 25px;
-        background-color: rgb(29, 29, 56);
-        border: rgb(85, 143, 143);
-        border-radius: 5%;
-    }
+.ingresa-mimundo {
+    margin: 70px 0 0 0;
+}
+.ini-ses__correo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.ini-ses__clave {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.ini-ses__boton {
+    margin: 10px;
+}
+.sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px;
+}
+.sincuenta__unete {
+    margin: 0 0 70px 0;
+}
+.sincuenta__imagen {
+    width: 100%;
+}
+.registro__formulario {
+    margin: 100px 0 0 0;
+}
+.registro__usuario {
+    margin: 0 0 55px 120px;
+}
+.registro__nombre {
+    margin: 0 0 55px 250px;
+}
+.registro__apellido {
+    margin: 0 0 55px 370px;
+}
+.registro__correo {
+    margin: 0 0 55px 400px;
+}
+.registro__clave {
+    margin: 0 0 55px 580px;
+}
+.registro__confirmar {
+    margin: 0 0 55px 610px;
+}
+.registro__enviar {
+    margin: 0 0 55px 1050px;
+}
 /* leyendas */
 .ley-arg__mapa {
     display: flex;
@@ -197,99 +192,11 @@ footer {
     width: 1000px;
     margin: 30px;
 }
-/* galeria-img */
-.galeria__imagenes {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "niebla imagen-bosque lobizonnegro"
-                        "niebla cielo-nocturno lobizonnegro"
-                        "almamula cielo-nocturno puente-colgante"
-                        "almamula carretera puente-colgante";
-    column-gap: 15px;
-    background-color: rgb(4, 7, 10);
-}
-.almamula {
-    grid-area: almamula;
-    background-image: url("../recursos/almamula.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.carretera {
-    grid-area: carretera;
-    background-image: url("../recursos/carretera.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.lobizonnegro {
-    grid-area: lobizonnegro;
-    background-image: url("../recursos/lobizonnegro.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.niebla {
-    grid-area: niebla;
-    background-image: url("../recursos/niebla-bosque.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.cielo-nocturno {
-    grid-area: cielo-nocturno;
-    background-image: url("../recursos/noche-bosque.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.puente-colgante {
-    grid-area: puente-colgante;
-    background-image: url("../recursos/puente-colgante.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.imagen-bosque {
-    grid-area: imagen-bosque;
-    background-image: url("../recursos/segundo-bosque.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.galeria__img {
+    height: 500px;
 }
 /* media querie vista celular */
 @media (min-width: 320px) and (max-width: 575px) {
-    /* navegacion modificada */
-    header {
-        height: auto;
-    }
-    .header__ul {
-        flex-direction: column;
-        flex-grow: 0;
-        justify-content: center;
-        align-items: center;
-    }
-    .header__nav {
-        flex-direction: column;
-    }
-    /* galeria modificada */
-    .galeria__imagenes {
-        height: 200px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: "niebla"
-                            "imagen-bosque"
-                            "lobizonnegro"
-                            "niebla"
-                            "cielo-nocturno"
-                            "lobizonnegro"
-                            "almamula"
-                            "carretera"
-                            "puente-colgante";
-    }
     /* index modificado */
     .main__banner {
         width: 415px;
@@ -420,16 +327,13 @@ footer {
         padding: 5px 16px;
         flex-wrap: wrap;
     }
+    .galeria__img {
+        height: 300px;
+    }
 }
 /* media querie vista tablet */
 @media (min-width: 576px) and (max-width: 992px) {
-    /* galeria modificada tablet */
-    .galeria__imagenes {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "niebla imagen-bosque lobizonnegro"
-                            "niebla cielo-nocturno lobizonnegro"
-                            "almamula carretera puente-colgante";
-    }
+    /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
     /* index modificado */
     .main__banner {
         width: 715px;
