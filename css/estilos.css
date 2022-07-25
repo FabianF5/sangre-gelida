@@ -107,11 +107,12 @@ footer {
 /* contacto */
 .contact-imagen {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 0 0 0;
 }
 .contact-imagen__imagen {
-    width: 700px;
+    height: 500px;
+    width: 1000px;
 }
 .contact__redes {
     display: flex;
@@ -119,14 +120,23 @@ footer {
     justify-content: space-around;
     background-color: rgb(33, 33, 41);
     list-style: none;
+    flex-wrap: wrap;
+    padding: 10px 0;
 }
 .contact-redes__icono {
-    width: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
 }
 /* creepypastas */
 .the-rake__multimedia {
     display: flex;
     justify-content: space-around;
+}
+.herobrine__imagen {
+    display: flex;
+    justify-content: center;
+    height: 33vh;
 }
 /* inicio-sesion */
 .ingresa-mimundo {
@@ -192,52 +202,54 @@ footer {
     width: 1000px;
     margin: 30px;
 }
+/* galeria */
 .galeria__img {
     height: 500px;
 }
 /* media querie vista celular */
 @media (min-width: 320px) and (max-width: 575px) {
+    h1 {
+        font-family: 'Berkshire Swash', cursive;
+        text-align: center;
+        margin: 50px 0 50px 0;
+        font-size: 45px;
+    }
+    h2 {
+        text-align: center;
+        margin: 50px 0 50px 0;
+        font-size: 35px;
+    }
     /* index modificado */
     .main__banner {
-        width: 415px;
-        height: 170px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .main__intro {
-        padding: 0 0 20px 0;
+        height: 55vh;
+        padding: 20px 0 0 0;
     }
     .minigaleria {
-        display: grid;
-        width: 96vw;
-        height: 96vh;
+        height: auto;
+        width: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: (8, 1fr);
-        grid-template-areas: "fogata"
-                            "sierras"
-                            "ciudad-noche";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "galeria__sierras"
+                            "fogataencendida"
+                            "ciudad-de-noche";
     }
-    .fogata {
-        grid-area: fogata;
-        background-image: url("../recursos/fogata.jpg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+    .galeria__sierras {
+        grid-area: galeria__sierras;
+        height: 90vh;
+        width: 90vw;
+        background-size: cover;
     }
-    .sierras {
-        grid-area: sierras;
-        background-image: url("../recursos/sierras.jpg");
-        background-position: center;
+    .fogataencendida {
+        grid-area: fogataencendida;
+        height: 90vh;
+        width: 90vw;
         background-size: contain;
-        background-repeat: no-repeat;
     }
-    .ciudad-noche {
-        grid-area: ciudad-noche;
-        background-image: url("../recursos/ciudad-noche.jpg");
-        background-position: center;
+    .ciudad-de-noche {
+        grid-area: ciudad-de-noche;
+        height: 90vh;
+        width: 90vw;
         background-size: contain;
-        background-repeat: no-repeat;
     }
     /* inicio-sesion modificado */
     .ingresa-mimundo {
@@ -246,6 +258,16 @@ footer {
     .iniciarsesion {
         text-align: center;
         margin: 70px 0 0 0;
+    }
+    .ini-ses__correo {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: ini-ses__correo;
+    }
+    .ini-ses__clave {
+        grid-area: ini-ses__clave;
+        display: flex;
+        flex-wrap: wrap;
     }
     .sincuenta {
         text-align: center;
@@ -259,65 +281,57 @@ footer {
         width: 100%;
     }
     .registro__formulario {
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "registro__usuario"
-                            "registro__nombre"
-                            "registro__apellido"
-                            "registro__correo"
-                            "registro__clave"
-                            "registro__confirmar"
-                            "boton";
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding: 0 25px;
     }
-    .registro__usuario {
-        display: grid;
-        grid-area: registro__usuario;
-    }
-    .registro__nombre {
-        display: grid;
-        grid-area: registro__nombre;
-    }
-    .registro__apellido {
-        display: grid;
-        grid-area: registro__apellido;
-    }
-    .registro__correo {
-        display: grid;
-        grid-area: registro__correo;
-    }
-    .registro__clave {
-        display: grid;
-        grid-area: registro__clave;
-    }
-    .registro__confirmar {
-        display: grid;
-        grid-area: registro__confirmar;
-    }
-    button {
-        display: grid;
-        grid-area: boton;
+    .boton {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0 40px 0 0;
     }
     /* Contactos modificado */
-    .contact-imagen {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .contact-imagen__imagen {
-        width: 250px;
+        height: 40vh;
+        width: 90vw;
+        padding: 20px 0 0 0;
+    }
+    .contact__redes--caja {
+        display: flex;
+        justify-content: center;
     }
     .contact__redes {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: rgb(33, 33, 41);
-        list-style: none;
+        flex-direction: column;
+        padding: 20px 10px;
     }
     .contact-redes__icono {
-        width: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 45px;
+        margin: 10px;
+    }
+    /* leyendas modificada: celular */
+    .lobizon__img {
+        margin: 20px 0;
+        height: 90vh;
+        width: 90vw;
+    }
+    .luzmala__imagen--caja {
+        display: flex;
+        justify-content: center;
+    }
+    .luzmala__imagen {
+        height: 40vh;
+        width: 100vw;
+    }
+    /* Creepypastas... */
+    .herobrine__imagen {
+        display: flex;
+        height: 170px;
+        justify-content: center;
     }
     /* footer modificado */
     footer {
@@ -327,20 +341,13 @@ footer {
         padding: 5px 16px;
         flex-wrap: wrap;
     }
-    .galeria__img {
-        height: 300px;
-    }
 }
 /* media querie vista tablet */
 @media (min-width: 576px) and (max-width: 992px) {
     /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
     /* index modificado */
     .main__banner {
-        width: 715px;
-        height: 450px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        height: 90vh;
     }
     .main__intro {
         padding: 0 0 20px 0;
@@ -374,7 +381,7 @@ footer {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    /* galeria modificada tablet */
+    /* footer */
     footer {
         display: flex;
         font-size: 15px;
