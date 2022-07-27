@@ -143,7 +143,7 @@ footer {
 .herobrine__imagen {
     display: flex;
     justify-content: center;
-    height: 33vh;
+    height: 500px;
 }
 /* inicio-sesion */
 .ingresa-mimundo {
@@ -335,9 +335,9 @@ footer {
         width: 100vw;
     }
     /* Creepypastas... */
-    .herobrine__imagen {
+    .herobrine__cel-img {
         display: flex;
-        height: 170px;
+        height: 27vh;
         justify-content: center;
     }
     /* Galeria modificada */
