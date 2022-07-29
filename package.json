@@ -1,0 +1,25 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "<h1>Sangre Gélida- Proyecto Coderhouse</h1>\r <p>Este sitio es para recopilar todas las Leyendas y Creepypastas (y cualquier otro contenido aterrador) existentes posibles...</p>\r <h2>Tecnologías usadas:</h2>\r <ul>\r     <li>HTML5</li>\r     <li>css3</li>\r     <li>Bootstrap</li>\r     <li>SASS</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabianF5/sangre-gelida.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabianF5/sangre-gelida/issues"
+  },
+  "homepage": "https://github.com/FabianF5/sangre-gelida#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

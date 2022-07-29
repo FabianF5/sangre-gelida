@@ -1,0 +1,186 @@
+@import "header";
+@import "nav";
+@import "formulario";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    color: rgb(159, 192, 192);
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    padding: 0 16px;
+    background-image: url(../recursos/noche-bosque.jpg);
+    background-color: rgb(1, 0, 31);
+}
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    font-size: 50px;
+}
+h2 {
+    text-align: center;
+    margin: 50px 0 50px 0;
+    font-size: 40px;
+}
+blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+cite {
+    font-size: 18px;
+}
+img {
+    display: flex;
+    flex-wrap: wrap;
+}
+iframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+button {
+    padding: 5px 25px;
+    background-color: rgb(29, 29, 56);
+    border: rgb(85, 143, 143);
+    border-radius: 5%;
+    font-family: 'Dancing Script', cursive;
+}
+footer {
+    font-size: 20px;
+    color: rgb(159, 192, 192);
+    margin: 16px;
+    padding: 5px 16px;
+    background-color: rgb(1, 0, 31);
+    display: flex;
+    flex-wrap: wrap;
+}
+/* index */
+.main__banner {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main__intro {
+    padding: 0 0 20px 0;
+}
+.minigaleria {
+    display: grid;
+    width: 96vw;
+    height: 96vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fogata sierras ciudad-noche";
+    column-gap: 15px;
+}
+.fogata {
+    grid-area: fogata;
+    background-image: url("../recursos/fogata.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sierras {
+    grid-area: sierras;
+    background-image: url("../recursos/sierras.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.ciudad-noche {
+    grid-area: ciudad-noche;
+    background-image: url("../recursos/ciudad-noche.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* contacto */
+.contact-imagen {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+.contact-imagen__imagen {
+    height: 500px;
+    width: 1000px;
+}
+.contact__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(33, 33, 41);
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.contact-redes__icono {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+}
+/* creepypastas */
+.the-rake__multimedia {
+    display: flex;
+    justify-content: space-around;
+}
+.herobrine {
+    &__imagen {
+        display: flex;
+        justify-content: center;
+        height: 500px;
+    }
+}
+/* inicio-sesion */
+.ingresa-mimundo {
+    margin: 70px 0 0 0;
+}
+.iniciarsesion {
+    .ini-ses {
+        &__correo {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        &__clave {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        &__boton {
+            margin: 10px;
+        }
+    }
+}
+.sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px;
+
+    &__unete {
+        margin: 0 0 70px 0;
+    }
+    &__imagen {
+        width: 100%;
+    }
+}
+/* leyendas */
+.ley-arg__mapa {
+    display: flex;
+    justify-content: center;
+}
+.lobizon__img {
+    margin: 20px 0;
+}
+.luzmala__imagen {
+    width: 1000px;
+    margin: 30px;
+}
+/* galeria */
+.galeria__img {
+    height: 150vh;
+}
+@import "medias";

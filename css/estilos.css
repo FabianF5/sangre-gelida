@@ -1,402 +1,356 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-body {
-    color: rgb(159, 192, 192);
-    font-family: 'Dancing Script', cursive;
-    font-size: 25px;
-    padding: 0 16px;
-    background-image: url(../recursos/noche-bosque.jpg);
-    background-color: rgb(1, 0, 31);
-}
+/* Header: */
 header {
-    position: sticky;
-    top: 0px;
-    background-color: rgb(20, 20, 39);
-}
-.header__contlista a {
-    color: rgb(92, 126, 155);
-    margin: 0 25px;
-}
-.header__contlista:hover {
+  position: sticky;
+  top: 0px;
+  background-color: #141427; }
+  header__contlista a {
+    color: #5c7e9b;
+    margin: 0 25px; }
+  header__contlista:hover {
     transform: scale(1.15, 1.15);
-    transition: all 0.5s;
-}
+    transition: all 0.5s; }
+
 a:visited {
-    color: rgb(54, 15, 92);
-}
+  color: #360f5c; }
+
+.registro__formulario {
+  margin: 100px 0 0 0; }
+  .registro__formulario .registro__usuario {
+    margin: 0 0 55px 120px; }
+  .registro__formulario .registro__nombre {
+    margin: 0 0 55px 250px; }
+  .registro__formulario .registro__apellido {
+    margin: 0 0 55px 370px; }
+  .registro__formulario .registro__correo {
+    margin: 0 0 55px 400px; }
+  .registro__formulario .registro__clave {
+    margin: 0 0 55px 580px; }
+  .registro__formulario .registro__confirmar {
+    margin: 0 0 55px 610px; }
+  .registro__formulario .registro__enviar {
+    margin: 0 0 55px 1050px; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  color: #9fc0c0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  padding: 0 16px;
+  background-image: url(../recursos/noche-bosque.jpg);
+  background-color: #01001f; }
+
 h1 {
+  font-family: 'Berkshire Swash', cursive;
+  text-align: center;
+  margin: 50px 0 50px 0;
+  font-size: 50px; }
+
+h2 {
+  text-align: center;
+  margin: 50px 0 50px 0;
+  font-size: 40px; }
+
+blockquote {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px; }
+
+cite {
+  font-size: 18px; }
+
+img {
+  display: flex;
+  flex-wrap: wrap; }
+
+iframe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+button {
+  padding: 5px 25px;
+  background-color: #1d1d38;
+  border: #558f8f;
+  border-radius: 5%;
+  font-family: 'Dancing Script', cursive; }
+
+footer {
+  font-size: 20px;
+  color: #9fc0c0;
+  margin: 16px;
+  padding: 5px 16px;
+  background-color: #01001f;
+  display: flex;
+  flex-wrap: wrap; }
+
+/* index */
+.main__banner {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.main__intro {
+  padding: 0 0 20px 0; }
+
+.minigaleria {
+  display: grid;
+  width: 96vw;
+  height: 96vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "fogata sierras ciudad-noche";
+  column-gap: 15px; }
+
+.fogata {
+  grid-area: fogata;
+  background-image: url("../recursos/fogata.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sierras {
+  grid-area: sierras;
+  background-image: url("../recursos/sierras.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.ciudad-noche {
+  grid-area: ciudad-noche;
+  background-image: url("../recursos/ciudad-noche.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* contacto */
+.contact-imagen {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0; }
+
+.contact-imagen__imagen {
+  height: 500px;
+  width: 1000px; }
+
+.contact__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #212129;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 10px 0; }
+
+.contact-redes__icono {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px; }
+
+/* creepypastas */
+.the-rake__multimedia {
+  display: flex;
+  justify-content: space-around; }
+
+.herobrine__imagen {
+  display: flex;
+  justify-content: center;
+  height: 500px; }
+
+/* inicio-sesion */
+.ingresa-mimundo {
+  margin: 70px 0 0 0; }
+
+.iniciarsesion .ini-ses__correo {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+.iniciarsesion .ini-ses__clave {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+.iniciarsesion .ini-ses__boton {
+  margin: 10px; }
+
+.sincuenta {
+  text-align: center;
+  margin: 80px 0 0 0;
+  font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+
+/* leyendas */
+.ley-arg__mapa {
+  display: flex;
+  justify-content: center; }
+
+.lobizon__img {
+  margin: 20px 0; }
+
+.luzmala__imagen {
+  width: 1000px;
+  margin: 30px; }
+
+/* galeria */
+.galeria__img {
+  height: 150vh; }
+
+/* media querie vista celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  h1 {
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
     margin: 50px 0 50px 0;
-    font-size: 50px;
-}
-h2 {
+    font-size: 45px; }
+  h2 {
     text-align: center;
     margin: 50px 0 50px 0;
-    font-size: 40px;
-}
-blockquote {
+    font-size: 35px; }
+  /* index modificado */
+  .main__banner {
+    height: 55vh;
+    padding: 20px 0 0 0; }
+  .minigaleria {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "galeria__sierras" "fogataencendida" "ciudad-de-noche"; }
+  .galeria__sierras {
+    grid-area: galeria__sierras;
+    height: 90vh;
+    width: 90vw;
+    background-size: cover; }
+  .fogataencendida {
+    grid-area: fogataencendida;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  .ciudad-de-noche {
+    grid-area: ciudad-de-noche;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  /* inicio-sesion modificado */
+  .ingresa-mimundo {
+    margin: 70px 0 0 0; }
+  .iniciarsesion {
+    text-align: center;
+    margin: 70px 0 0 0; }
+  .ini-ses__correo {
     display: flex;
     flex-wrap: wrap;
-    font-size: 25px;
-}
-cite {
-    font-size: 18px;
-}
-img {
+    grid-area: ini-ses__correo; }
+  .ini-ses__clave {
+    grid-area: ini-ses__clave;
+    display: flex;
+    flex-wrap: wrap; }
+  .sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+  .registro__formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 25px; }
+  .boton {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px 0 0; }
+  /* Contactos modificado */
+  .contact-imagen__imagen {
+    height: 40vh;
+    width: 90vw;
+    padding: 20px 0 0 0; }
+  .contact__redes--caja {
+    display: flex;
+    justify-content: center; }
+  .contact__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px; }
+  .contact-redes__icono {
     display: flex;
     flex-wrap: wrap;
-}
-iframe {
+    width: 45px;
+    margin: 10px; }
+  /* leyendas modificada: celular */
+  .lobizon__img {
+    margin: 20px 0;
+    height: 90vh;
+    width: 90vw; }
+  .luzmala__imagen--caja {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-button {
-    padding: 5px 25px;
-    background-color: rgb(29, 29, 56);
-    border: rgb(85, 143, 143);
-    border-radius: 5%;
-    font-family: 'Dancing Script', cursive;
-}
-footer {
+    justify-content: center; }
+  .luzmala__imagen {
+    height: 40vh;
+    width: 100vw; }
+  /* Creepypastas... */
+  .herobrine__cel-img {
+    display: flex;
+    height: 27vh;
+    justify-content: center; }
+  /* Galeria modificada */
+  .galeria__img--celular {
+    height: 400px; }
+  /* footer modificado */
+  footer {
+    display: flex;
     font-size: 20px;
-    color: rgb(159, 192, 192);
     margin: 16px;
     padding: 5px 16px;
-    background-color: rgb(1, 0, 31);
-    display: flex;
-    flex-wrap: wrap;
-}
-/* index */
-.main__banner {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.main__intro {
-    padding: 0 0 20px 0;
-}
-.minigaleria {
+    flex-wrap: wrap; } }
+
+/* media querie vista tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
+  /* index modificado */
+  .main__banner {
+    height: 90vh; }
+  .main__intro {
+    padding: 0 0 20px 0; }
+  .minigaleria {
     display: grid;
     width: 96vw;
     height: 96vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "fogata sierras ciudad-noche";
-    column-gap: 15px;
-}
-.fogata {
+    grid-template-areas: "fogata sierras ciudad-noche"; }
+  .fogata {
     grid-area: fogata;
     background-image: url("../recursos/fogata.jpg");
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-.sierras {
+    background-repeat: no-repeat; }
+  .sierras {
     grid-area: sierras;
     background-image: url("../recursos/sierras.jpg");
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-.ciudad-noche {
+    background-repeat: no-repeat; }
+  .ciudad-noche {
     grid-area: ciudad-noche;
     background-image: url("../recursos/ciudad-noche.jpg");
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-/* contacto */
-.contact-imagen {
+    background-repeat: no-repeat; }
+  /* footer */
+  footer {
     display: flex;
-    justify-content: center;
-    padding: 20px 0 0 0;
-}
-.contact-imagen__imagen {
-    height: 500px;
-    width: 1000px;
-}
-.contact__redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(33, 33, 41);
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 10px 0;
-}
-.contact-redes__icono {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50px;
-}
-/* creepypastas */
-.the-rake__multimedia {
-    display: flex;
-    justify-content: space-around;
-}
-.herobrine__imagen {
-    display: flex;
-    justify-content: center;
-    height: 500px;
-}
-/* inicio-sesion */
-.ingresa-mimundo {
-    margin: 70px 0 0 0;
-}
-.ini-ses__correo {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-.ini-ses__clave {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-.ini-ses__boton {
-    margin: 10px;
-}
-.sincuenta {
-    text-align: center;
-    margin: 80px 0 0 0;
-    font-size: 40px;
-}
-.sincuenta__unete {
-    margin: 0 0 70px 0;
-}
-.sincuenta__imagen {
-    width: 100%;
-}
-.registro__formulario {
-    margin: 100px 0 0 0;
-}
-.registro__usuario {
-    margin: 0 0 55px 120px;
-}
-.registro__nombre {
-    margin: 0 0 55px 250px;
-}
-.registro__apellido {
-    margin: 0 0 55px 370px;
-}
-.registro__correo {
-    margin: 0 0 55px 400px;
-}
-.registro__clave {
-    margin: 0 0 55px 580px;
-}
-.registro__confirmar {
-    margin: 0 0 55px 610px;
-}
-.registro__enviar {
-    margin: 0 0 55px 1050px;
-}
-/* leyendas */
-.ley-arg__mapa {
-    display: flex;
-    justify-content: center;
-}
-.lobizon__img {
-    margin: 20px 0;
-}
-.luzmala__imagen {
-    width: 1000px;
-    margin: 30px;
-}
-/* galeria */
-.galeria__img {
-    height: 150vh;
-}
-/* media querie vista celular */
-@media (min-width: 320px) and (max-width: 575px) {
-    h1 {
-        font-family: 'Berkshire Swash', cursive;
-        text-align: center;
-        margin: 50px 0 50px 0;
-        font-size: 45px;
-    }
-    h2 {
-        text-align: center;
-        margin: 50px 0 50px 0;
-        font-size: 35px;
-    }
-    /* index modificado */
-    .main__banner {
-        height: 55vh;
-        padding: 20px 0 0 0;
-    }
-    .minigaleria {
-        height: auto;
-        width: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "galeria__sierras"
-                            "fogataencendida"
-                            "ciudad-de-noche";
-    }
-    .galeria__sierras {
-        grid-area: galeria__sierras;
-        height: 90vh;
-        width: 90vw;
-        background-size: cover;
-    }
-    .fogataencendida {
-        grid-area: fogataencendida;
-        height: 90vh;
-        width: 90vw;
-        background-size: contain;
-    }
-    .ciudad-de-noche {
-        grid-area: ciudad-de-noche;
-        height: 90vh;
-        width: 90vw;
-        background-size: contain;
-    }
-    /* inicio-sesion modificado */
-    .ingresa-mimundo {
-        margin: 70px 0 0 0;
-    }
-    .iniciarsesion {
-        text-align: center;
-        margin: 70px 0 0 0;
-    }
-    .ini-ses__correo {
-        display: flex;
-        flex-wrap: wrap;
-        grid-area: ini-ses__correo;
-    }
-    .ini-ses__clave {
-        grid-area: ini-ses__clave;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sincuenta {
-        text-align: center;
-        margin: 80px 0 0 0;
-        font-size: 40px;
-    }
-    .sincuenta__unete {
-        margin: 0 0 70px 0;
-    }
-    .sincuenta__imagen {
-        width: 100%;
-    }
-    .registro__formulario {
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        padding: 0 25px;
-    }
-    .boton {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding: 0 40px 0 0;
-    }
-    /* Contactos modificado */
-    .contact-imagen__imagen {
-        height: 40vh;
-        width: 90vw;
-        padding: 20px 0 0 0;
-    }
-    .contact__redes--caja {
-        display: flex;
-        justify-content: center;
-    }
-    .contact__redes {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 10px;
-    }
-    .contact-redes__icono {
-        display: flex;
-        flex-wrap: wrap;
-        width: 45px;
-        margin: 10px;
-    }
-    /* leyendas modificada: celular */
-    .lobizon__img {
-        margin: 20px 0;
-        height: 90vh;
-        width: 90vw;
-    }
-    .luzmala__imagen--caja {
-        display: flex;
-        justify-content: center;
-    }
-    .luzmala__imagen {
-        height: 40vh;
-        width: 100vw;
-    }
-    /* Creepypastas... */
-    .herobrine__cel-img {
-        display: flex;
-        height: 27vh;
-        justify-content: center;
-    }
-    /* Galeria modificada */
-    .galeria__img--celular {
-        height: 400px;
-    }
-    /* footer modificado */
-    footer {
-        display: flex;
-        font-size: 20px;
-        margin: 16px;
-        padding: 5px 16px;
-        flex-wrap: wrap;
-    }
-}
-/* media querie vista tablet */
-@media (min-width: 576px) and (max-width: 992px) {
-    /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
-    /* index modificado */
-    .main__banner {
-        height: 90vh;
-    }
-    .main__intro {
-        padding: 0 0 20px 0;
-    }
-    .minigaleria {
-        display: grid;
-        width: 96vw;
-        height: 96vh;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "fogata sierras ciudad-noche";
-    }
-    .fogata {
-        grid-area: fogata;
-        background-image: url("../recursos/fogata.jpg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .sierras {
-        grid-area: sierras;
-        background-image: url("../recursos/sierras.jpg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .ciudad-noche {
-        grid-area: ciudad-noche;
-        background-image: url("../recursos/ciudad-noche.jpg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    /* footer */
-    footer {
-        display: flex;
-        font-size: 15px;
-        margin: 16px;
-        padding: 5px 16px;
-    }
-}
+    font-size: 15px;
+    margin: 16px;
+    padding: 5px 16px; } }
