@@ -3,13 +3,16 @@
     h1 {
         font-family: 'Berkshire Swash', cursive;
         text-align: center;
-        margin: 50px 0 50px 0;
-        font-size: 45px;
+        margin: 50px 0;
+        font-size: 35px;
     }
     h2 {
         text-align: center;
-        margin: 50px 0 50px 0;
-        font-size: 35px;
+        margin: 50px 0;
+        font-size: 25px;
+    }
+    body {
+        font-size: 20px;
     }
     /* index modificado */
     .main__banner {
@@ -125,6 +128,12 @@
         height: 27vh;
         justify-content: center;
     }
+    .the-rake__video {
+        display: flex;
+        justify-content: space-around;
+        height: 37vh;
+        width: 300vw;
+    }
     /* Galeria modificada */
     .galeria__img--celular {
         height: 400px;
@@ -180,8 +189,8 @@
     /* footer */
     footer {
         display: flex;
-        font-size: 15px;
         margin: 16px;
         padding: 5px 16px;
+        font-size: 20px;
     }
 }
