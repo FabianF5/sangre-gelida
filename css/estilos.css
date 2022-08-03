@@ -11,8 +11,9 @@ header {
     transition: all 0.5s; }
 
 a:visited {
-  color: #360f5c; }
+  color: #8000ff; }
 
+/* formulario */
 .registro__formulario {
   margin: 100px 0 0 0; }
   .registro__formulario .registro__usuario {
@@ -154,7 +155,8 @@ footer {
 /* creepypastas */
 .the-rake__multimedia {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 50px 0 0 0; }
 
 .herobrine__imagen {
   display: flex;
@@ -208,12 +210,14 @@ footer {
   h1 {
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
-    margin: 50px 0 50px 0;
-    font-size: 45px; }
+    margin: 50px 0;
+    font-size: 35px; }
   h2 {
     text-align: center;
-    margin: 50px 0 50px 0;
-    font-size: 35px; }
+    margin: 50px 0;
+    font-size: 25px; }
+  body {
+    font-size: 20px; }
   /* index modificado */
   .main__banner {
     height: 55vh;
@@ -304,6 +308,11 @@ footer {
     display: flex;
     height: 27vh;
     justify-content: center; }
+  .the-rake__video {
+    display: flex;
+    justify-content: space-around;
+    height: 37vh;
+    width: 300vw; }
   /* Galeria modificada */
   .galeria__img--celular {
     height: 400px; }
@@ -351,6 +360,6 @@ footer {
   /* footer */
   footer {
     display: flex;
-    font-size: 15px;
     margin: 16px;
-    padding: 5px 16px; } }
+    padding: 5px 16px;
+    font-size: 20px; } }
