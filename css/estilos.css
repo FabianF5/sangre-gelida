@@ -13,7 +13,72 @@ header {
 a:visited {
   color: #8000ff; }
 
-/* formulario */
+/* contacto */
+.contact-imagen {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0; }
+
+.contact-imagen__imagen {
+  height: 500px;
+  width: 1000px; }
+
+.contact__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #212129;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 10px 0; }
+
+.contact-redes__icono {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px; }
+
+/* creepypastas */
+.the-rake__multimedia {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0 0 0; }
+
+.herobrine__imagen {
+  display: flex;
+  justify-content: center;
+  height: 500px; }
+
+/* galeria */
+.galeria__img {
+  height: 150vh; }
+
+/* inicio-sesion */
+.ingresa-mimundo {
+  margin: 70px 0 0 0; }
+
+.iniciarsesion .ini-ses__correo {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+.iniciarsesion .ini-ses__clave {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+.iniciarsesion .ini-ses__boton {
+  margin: 10px; }
+
+.sincuenta {
+  text-align: center;
+  margin: 80px 0 0 0;
+  font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+
+/* formulario de registro */
 .registro__formulario {
   margin: 100px 0 0 0; }
   .registro__formulario .registro__usuario {
@@ -30,6 +95,18 @@ a:visited {
     margin: 0 0 55px 610px; }
   .registro__formulario .registro__enviar {
     margin: 0 0 55px 1050px; }
+
+/* leyendas */
+.ley-arg__mapa {
+  display: flex;
+  justify-content: center; }
+
+.lobizon__img {
+  margin: 20px 0; }
+
+.luzmala__imagen {
+  width: 1000px;
+  margin: 30px; }
 
 * {
   margin: 0px;
@@ -127,83 +204,6 @@ footer {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
-
-/* contacto */
-.contact-imagen {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0 0 0; }
-
-.contact-imagen__imagen {
-  height: 500px;
-  width: 1000px; }
-
-.contact__redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #212129;
-  list-style: none;
-  flex-wrap: wrap;
-  padding: 10px 0; }
-
-.contact-redes__icono {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50px; }
-
-/* creepypastas */
-.the-rake__multimedia {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px 0 0 0; }
-
-.herobrine__imagen {
-  display: flex;
-  justify-content: center;
-  height: 500px; }
-
-/* inicio-sesion */
-.ingresa-mimundo {
-  margin: 70px 0 0 0; }
-
-.iniciarsesion .ini-ses__correo {
-  display: flex;
-  justify-content: center;
-  padding: 10px; }
-
-.iniciarsesion .ini-ses__clave {
-  display: flex;
-  justify-content: center;
-  padding: 10px; }
-
-.iniciarsesion .ini-ses__boton {
-  margin: 10px; }
-
-.sincuenta {
-  text-align: center;
-  margin: 80px 0 0 0;
-  font-size: 40px; }
-  .sincuenta__unete {
-    margin: 0 0 70px 0; }
-  .sincuenta__imagen {
-    width: 100%; }
-
-/* leyendas */
-.ley-arg__mapa {
-  display: flex;
-  justify-content: center; }
-
-.lobizon__img {
-  margin: 20px 0; }
-
-.luzmala__imagen {
-  width: 1000px;
-  margin: 30px; }
-
-/* galeria */
-.galeria__img {
-  height: 150vh; }
 
 /* media querie vista celular */
 @media (min-width: 320px) and (max-width: 575px) {

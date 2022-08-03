@@ -1,0 +1,61 @@
+/* inicio-sesion */
+.ingresa-mimundo {
+    margin: 70px 0 0 0;
+}
+.iniciarsesion {
+    .ini-ses {
+        &__correo {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        &__clave {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        &__boton {
+            margin: 10px;
+        }
+    }
+}
+.sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px;
+
+    &__unete {
+        margin: 0 0 70px 0;
+    }
+    &__imagen {
+        width: 100%;
+    }
+}
+/* formulario de registro */
+.registro__formulario {
+    margin: 100px 0 0 0;
+
+    .registro {
+        &__usuario {
+            margin: 0 0 55px 120px;
+        }
+        &__nombre {
+            margin: 0 0 55px 250px;
+        }
+        &__apellido {
+            margin: 0 0 55px 370px;
+        }
+        &__correo {
+            margin: 0 0 55px 400px;
+        }
+        &__clave {
+            margin: 0 0 55px 580px;
+        }
+        &__confirmar {
+            margin: 0 0 55px 610px;
+        }
+        &__enviar {
+            margin: 0 0 55px 1050px;
+        }
+    }
+}
