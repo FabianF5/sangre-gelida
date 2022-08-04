@@ -1,8 +1,9 @@
+@import "variables";
 /* Header: */
 header {
     position: sticky;
     top: 0px;
-    background-color: rgb(20, 20, 39);
+    background-color: $color-principal;
     &__contlista a {
         color: rgb(92, 126, 155);
         margin: 0 25px;
