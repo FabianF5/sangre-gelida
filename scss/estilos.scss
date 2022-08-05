@@ -5,14 +5,15 @@
 @import "paginas/inicio-sesion";
 @import "paginas/leyendas";
 @import "variables";
+@import "operadores";
 * {
     margin: 0px;
     padding: 0px;
 }
 body {
-    color: rgb(159, 192, 192);
+    color: $color-texto;
     font-family: 'Dancing Script', cursive;
-    font-size: 25px;
+    font-size: $tama-texto;
     padding: 0 16px;
     background-image: url(../recursos/noche-bosque.jpg);
     background-color: rgb(1, 0, 31);
@@ -21,7 +22,7 @@ h1 {
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
     margin: 50px 0 50px 0;
-    font-size: 50px;
+    font-size: $tama-titulo;
 }
 h2 {
     text-align: center;
@@ -48,13 +49,13 @@ iframe {
 button {
     padding: 5px 25px;
     background-color: rgb(29, 29, 56);
-    border: rgb(85, 143, 143);
+    border: $color-texto;
     border-radius: 5%;
     font-family: 'Dancing Script', cursive;
 }
 footer {
     font-size: 20px;
-    color: rgb(159, 192, 192);
+    color: $color-texto;
     margin: 16px;
     padding: 5px 16px;
     background-color: $color-principal;
@@ -82,24 +83,18 @@ footer {
     column-gap: 15px;
 }
 .fogata {
+    @extend .background-minigaleria;
     grid-area: fogata;
     background-image: url("../recursos/fogata.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .sierras {
+    @extend .background-minigaleria;
     grid-area: sierras;
     background-image: url("../recursos/sierras.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .ciudad-noche {
+    @extend .background-minigaleria;
     grid-area: ciudad-noche;
     background-image: url("../recursos/ciudad-noche.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 @import "medias";

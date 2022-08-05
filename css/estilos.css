@@ -1,11 +1,13 @@
+@charset "UTF-8";
 /* COLORES */
+/* TAMAÑOS FUENTE */
 /* Header: */
 header {
   position: sticky;
   top: 0px;
   background-color: #0c0b1a; }
   header__contlista a {
-    color: #5c7e9b;
+    color: #9fc0c0;
     margin: 0 25px; }
   header__contlista:hover {
     transform: scale(1.15, 1.15);
@@ -110,6 +112,30 @@ a:visited {
   margin: 30px; }
 
 /* COLORES */
+/* TAMAÑOS FUENTE */
+/* each: cada uno */
+.color-twitter {
+  background-color: lightblue;
+  border-radius: 20%; }
+
+.color-facebook {
+  background-color: blue;
+  border-radius: 20%; }
+
+.color-instagram {
+  background-color: #ff5100;
+  border-radius: 20%; }
+
+.color-youtube {
+  background-color: red;
+  border-radius: 20%; }
+
+/* Extend: extender código */
+.background-minigaleria, .fogata, .sierras, .ciudad-noche {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -153,7 +179,7 @@ iframe {
 button {
   padding: 5px 25px;
   background-color: #1d1d38;
-  border: #558f8f;
+  border: #9fc0c0;
   border-radius: 5%;
   font-family: 'Dancing Script', cursive; }
 
@@ -188,24 +214,15 @@ footer {
 
 .fogata {
   grid-area: fogata;
-  background-image: url("../recursos/fogata.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/fogata.jpg"); }
 
 .sierras {
   grid-area: sierras;
-  background-image: url("../recursos/sierras.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/sierras.jpg"); }
 
 .ciudad-noche {
   grid-area: ciudad-noche;
-  background-image: url("../recursos/ciudad-noche.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/ciudad-noche.jpg"); }
 
 /* media querie vista celular */
 @media (min-width: 320px) and (max-width: 575px) {

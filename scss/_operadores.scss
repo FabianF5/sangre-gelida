@@ -1,0 +1,19 @@
+$redes:(
+    twitter: lightblue,
+    facebook: blue,
+    instagram: rgb(255, 81, 0),
+    youtube: red
+);
+/* each: cada uno */
+@each $nombre, $color in $redes {
+    .color-#{$nombre} {
+        background-color: #{$color};
+        border-radius: 20%;
+    }
+}
+/* Extend: extender código */
+.background-minigaleria {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
