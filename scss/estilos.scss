@@ -12,7 +12,7 @@
 }
 body {
     color: $color-texto;
-    font-family: 'Dancing Script', cursive;
+    font-family: $fuente-dancing;
     font-size: $tama-texto;
     padding: 0 16px;
     background-image: url(../recursos/noche-bosque.jpg);
@@ -51,15 +51,16 @@ button {
     background-color: rgb(29, 29, 56);
     border: $color-texto;
     border-radius: 5%;
-    font-family: 'Dancing Script', cursive;
+    font-family: $fuente-dancing;
 }
 footer {
+    display: flex;
     font-size: 20px;
     color: $color-texto;
+    font-family: $fuente-dancing;
     margin: 16px;
     padding: 5px 16px;
     background-color: $color-principal;
-    display: flex;
     flex-wrap: wrap;
 }
 /* index */
