@@ -5,6 +5,8 @@
     padding: 20px 0 0 0;
 }
 .contact-imagen__imagen {
+    display: flex;
+    flex-wrap: wrap;
     height: 500px;
     width: 1000px;
 }
@@ -22,3 +24,4 @@
     flex-wrap: wrap;
     width: 50px;
 }
+@import "medias";

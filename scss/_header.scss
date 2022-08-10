@@ -5,7 +5,7 @@ header {
     top: 0px;
     background-color: $color-principal;
     &__contlista a {
-        color: $color-texto;
+        color: rgb(132, 161, 255);
         margin: 0 25px;
     }
     &__contlista:hover {
@@ -16,3 +16,4 @@ header {
 a:visited {
     color: rgb(128, 0, 255);
 }
+@import "medias";

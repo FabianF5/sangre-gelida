@@ -6,7 +6,16 @@
 .lobizon__img {
     margin: 20px 0;
 }
+.inframe__lobizon--caja {
+    display: flex;
+    justify-content: center;
+}
 .luzmala__imagen {
     width: 1000px;
     margin: 30px;
 }
+.luzmala__imagen--caja {
+    display: flex;
+    justify-content: center;
+}
+@import "medias";

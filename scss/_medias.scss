@@ -1,17 +1,24 @@
 /* media querie vista celular */
 @media (min-width: 320px) and (max-width: 575px) {
+    /* selectores */
     h1 {
         font-family: 'Berkshire Swash', cursive;
         text-align: center;
-        margin: 50px 0;
+        padding: 40px 0;
         font-size: 35px;
     }
     h2 {
         text-align: center;
-        margin: 50px 0;
+        padding: 40px 0;
         font-size: 25px;
     }
     body {
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    blockquote {
+        display: flex;
+        flex-wrap: wrap;
         font-size: 20px;
     }
     /* index modificado */
@@ -49,6 +56,9 @@
     /* inicio-sesion modificado */
     .ingresa-mimundo {
         margin: 70px 0 0 0;
+    }
+    .ini-ses__titulo {
+        font-size: 35px;
     }
     .iniciarsesion {
         text-align: center;
@@ -109,6 +119,9 @@
         margin: 10px;
     }
     /* leyendas modificada: celular */
+    .lobizon__texto {
+        font-size: 20px;
+    }
     .lobizon__img {
         margin: 20px 0;
         height: 90vh;
@@ -119,8 +132,8 @@
         justify-content: center;
     }
     .luzmala__imagen {
-        height: 40vh;
-        width: 100vw;
+        height: 30vh;
+        width: 80vw;
     }
     /* Creepypastas... */
     .herobrine__cel-img {
@@ -129,10 +142,8 @@
         justify-content: center;
     }
     .the-rake__video {
-        display: flex;
-        justify-content: space-around;
         height: 37vh;
-        width: 300vw;
+        width: 200vw;
     }
     /* Galeria modificada */
     .galeria__img--celular {

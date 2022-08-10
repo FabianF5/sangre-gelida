@@ -8,7 +8,7 @@ header {
   top: 0px;
   background-color: #0c0b1a; }
   header__contlista a {
-    color: #9fc0c0;
+    color: #84a1ff;
     margin: 0 25px; }
   header__contlista:hover {
     transform: scale(1.15, 1.15);
@@ -17,6 +17,173 @@ header {
 a:visited {
   color: #8000ff; }
 
+/* media querie vista celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* selectores */
+  h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 35px; }
+  h2 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 25px; }
+  body {
+    font-size: 20px;
+    margin: 10px 10px; }
+  blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; }
+  /* index modificado */
+  .main__banner {
+    height: 55vh;
+    padding: 20px 0 0 0; }
+  .minigaleria {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "galeria__sierras" "fogataencendida" "ciudad-de-noche"; }
+  .galeria__sierras {
+    grid-area: galeria__sierras;
+    height: 90vh;
+    width: 90vw;
+    background-size: cover; }
+  .fogataencendida {
+    grid-area: fogataencendida;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  .ciudad-de-noche {
+    grid-area: ciudad-de-noche;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  /* inicio-sesion modificado */
+  .ingresa-mimundo {
+    margin: 70px 0 0 0; }
+  .ini-ses__titulo {
+    font-size: 35px; }
+  .iniciarsesion {
+    text-align: center;
+    margin: 70px 0 0 0; }
+  .ini-ses__correo {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: ini-ses__correo; }
+  .ini-ses__clave {
+    grid-area: ini-ses__clave;
+    display: flex;
+    flex-wrap: wrap; }
+  .sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+  .registro__formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 25px; }
+  .boton {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px 0 0; }
+  /* Contactos modificado */
+  .contact-imagen__imagen {
+    height: 40vh;
+    width: 90vw;
+    padding: 20px 0 0 0; }
+  .contact__redes--caja {
+    display: flex;
+    justify-content: center; }
+  .contact__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px; }
+  .contact-redes__icono {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45px;
+    margin: 10px; }
+  /* leyendas modificada: celular */
+  .lobizon__texto {
+    font-size: 20px; }
+  .lobizon__img {
+    margin: 20px 0;
+    height: 90vh;
+    width: 90vw; }
+  .luzmala__imagen--caja {
+    display: flex;
+    justify-content: center; }
+  .luzmala__imagen {
+    height: 30vh;
+    width: 80vw; }
+  /* Creepypastas... */
+  .herobrine__cel-img {
+    display: flex;
+    height: 27vh;
+    justify-content: center; }
+  .the-rake__video {
+    height: 37vh;
+    width: 200vw; }
+  /* Galeria modificada */
+  .galeria__img--celular {
+    height: 400px; }
+  /* footer modificado */
+  footer {
+    display: flex;
+    font-size: 20px;
+    margin: 16px;
+    padding: 5px 16px;
+    flex-wrap: wrap; } }
+
+/* media querie vista tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
+  /* index modificado */
+  .main__banner {
+    height: 90vh; }
+  .main__intro {
+    padding: 0 0 20px 0; }
+  .minigaleria {
+    display: grid;
+    width: 96vw;
+    height: 96vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fogata sierras ciudad-noche"; }
+  .fogata {
+    grid-area: fogata;
+    background-image: url("../recursos/fogata.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .sierras {
+    grid-area: sierras;
+    background-image: url("../recursos/sierras.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .ciudad-noche {
+    grid-area: ciudad-noche;
+    background-image: url("../recursos/ciudad-noche.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  /* footer */
+  footer {
+    display: flex;
+    margin: 16px;
+    padding: 5px 16px;
+    font-size: 20px; } }
+
 /* contacto */
 .contact-imagen {
   display: flex;
@@ -24,6 +191,8 @@ a:visited {
   padding: 20px 0 0 0; }
 
 .contact-imagen__imagen {
+  display: flex;
+  flex-wrap: wrap;
   height: 500px;
   width: 1000px; }
 
@@ -41,6 +210,173 @@ a:visited {
   flex-wrap: wrap;
   width: 50px; }
 
+/* media querie vista celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* selectores */
+  h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 35px; }
+  h2 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 25px; }
+  body {
+    font-size: 20px;
+    margin: 10px 10px; }
+  blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; }
+  /* index modificado */
+  .main__banner {
+    height: 55vh;
+    padding: 20px 0 0 0; }
+  .minigaleria {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "galeria__sierras" "fogataencendida" "ciudad-de-noche"; }
+  .galeria__sierras {
+    grid-area: galeria__sierras;
+    height: 90vh;
+    width: 90vw;
+    background-size: cover; }
+  .fogataencendida {
+    grid-area: fogataencendida;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  .ciudad-de-noche {
+    grid-area: ciudad-de-noche;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  /* inicio-sesion modificado */
+  .ingresa-mimundo {
+    margin: 70px 0 0 0; }
+  .ini-ses__titulo {
+    font-size: 35px; }
+  .iniciarsesion {
+    text-align: center;
+    margin: 70px 0 0 0; }
+  .ini-ses__correo {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: ini-ses__correo; }
+  .ini-ses__clave {
+    grid-area: ini-ses__clave;
+    display: flex;
+    flex-wrap: wrap; }
+  .sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+  .registro__formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 25px; }
+  .boton {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px 0 0; }
+  /* Contactos modificado */
+  .contact-imagen__imagen {
+    height: 40vh;
+    width: 90vw;
+    padding: 20px 0 0 0; }
+  .contact__redes--caja {
+    display: flex;
+    justify-content: center; }
+  .contact__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px; }
+  .contact-redes__icono {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45px;
+    margin: 10px; }
+  /* leyendas modificada: celular */
+  .lobizon__texto {
+    font-size: 20px; }
+  .lobizon__img {
+    margin: 20px 0;
+    height: 90vh;
+    width: 90vw; }
+  .luzmala__imagen--caja {
+    display: flex;
+    justify-content: center; }
+  .luzmala__imagen {
+    height: 30vh;
+    width: 80vw; }
+  /* Creepypastas... */
+  .herobrine__cel-img {
+    display: flex;
+    height: 27vh;
+    justify-content: center; }
+  .the-rake__video {
+    height: 37vh;
+    width: 200vw; }
+  /* Galeria modificada */
+  .galeria__img--celular {
+    height: 400px; }
+  /* footer modificado */
+  footer {
+    display: flex;
+    font-size: 20px;
+    margin: 16px;
+    padding: 5px 16px;
+    flex-wrap: wrap; } }
+
+/* media querie vista tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
+  /* index modificado */
+  .main__banner {
+    height: 90vh; }
+  .main__intro {
+    padding: 0 0 20px 0; }
+  .minigaleria {
+    display: grid;
+    width: 96vw;
+    height: 96vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fogata sierras ciudad-noche"; }
+  .fogata {
+    grid-area: fogata;
+    background-image: url("../recursos/fogata.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .sierras {
+    grid-area: sierras;
+    background-image: url("../recursos/sierras.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .ciudad-noche {
+    grid-area: ciudad-noche;
+    background-image: url("../recursos/ciudad-noche.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  /* footer */
+  footer {
+    display: flex;
+    margin: 16px;
+    padding: 5px 16px;
+    font-size: 20px; } }
+
 /* creepypastas */
 .the-rake__multimedia {
   display: flex;
@@ -56,9 +392,343 @@ a:visited {
   font-size: 30px;
   color: #566fff; }
 
+/* media querie vista celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* selectores */
+  h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 35px; }
+  h2 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 25px; }
+  body {
+    font-size: 20px;
+    margin: 10px 10px; }
+  blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; }
+  /* index modificado */
+  .main__banner {
+    height: 55vh;
+    padding: 20px 0 0 0; }
+  .minigaleria {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "galeria__sierras" "fogataencendida" "ciudad-de-noche"; }
+  .galeria__sierras {
+    grid-area: galeria__sierras;
+    height: 90vh;
+    width: 90vw;
+    background-size: cover; }
+  .fogataencendida {
+    grid-area: fogataencendida;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  .ciudad-de-noche {
+    grid-area: ciudad-de-noche;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  /* inicio-sesion modificado */
+  .ingresa-mimundo {
+    margin: 70px 0 0 0; }
+  .ini-ses__titulo {
+    font-size: 35px; }
+  .iniciarsesion {
+    text-align: center;
+    margin: 70px 0 0 0; }
+  .ini-ses__correo {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: ini-ses__correo; }
+  .ini-ses__clave {
+    grid-area: ini-ses__clave;
+    display: flex;
+    flex-wrap: wrap; }
+  .sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+  .registro__formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 25px; }
+  .boton {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px 0 0; }
+  /* Contactos modificado */
+  .contact-imagen__imagen {
+    height: 40vh;
+    width: 90vw;
+    padding: 20px 0 0 0; }
+  .contact__redes--caja {
+    display: flex;
+    justify-content: center; }
+  .contact__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px; }
+  .contact-redes__icono {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45px;
+    margin: 10px; }
+  /* leyendas modificada: celular */
+  .lobizon__texto {
+    font-size: 20px; }
+  .lobizon__img {
+    margin: 20px 0;
+    height: 90vh;
+    width: 90vw; }
+  .luzmala__imagen--caja {
+    display: flex;
+    justify-content: center; }
+  .luzmala__imagen {
+    height: 30vh;
+    width: 80vw; }
+  /* Creepypastas... */
+  .herobrine__cel-img {
+    display: flex;
+    height: 27vh;
+    justify-content: center; }
+  .the-rake__video {
+    height: 37vh;
+    width: 200vw; }
+  /* Galeria modificada */
+  .galeria__img--celular {
+    height: 400px; }
+  /* footer modificado */
+  footer {
+    display: flex;
+    font-size: 20px;
+    margin: 16px;
+    padding: 5px 16px;
+    flex-wrap: wrap; } }
+
+/* media querie vista tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
+  /* index modificado */
+  .main__banner {
+    height: 90vh; }
+  .main__intro {
+    padding: 0 0 20px 0; }
+  .minigaleria {
+    display: grid;
+    width: 96vw;
+    height: 96vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fogata sierras ciudad-noche"; }
+  .fogata {
+    grid-area: fogata;
+    background-image: url("../recursos/fogata.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .sierras {
+    grid-area: sierras;
+    background-image: url("../recursos/sierras.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .ciudad-noche {
+    grid-area: ciudad-noche;
+    background-image: url("../recursos/ciudad-noche.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  /* footer */
+  footer {
+    display: flex;
+    margin: 16px;
+    padding: 5px 16px;
+    font-size: 20px; } }
+
 /* galeria */
 .galeria__img {
   height: 150vh; }
+
+/* media querie vista celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* selectores */
+  h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 35px; }
+  h2 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 25px; }
+  body {
+    font-size: 20px;
+    margin: 10px 10px; }
+  blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; }
+  /* index modificado */
+  .main__banner {
+    height: 55vh;
+    padding: 20px 0 0 0; }
+  .minigaleria {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "galeria__sierras" "fogataencendida" "ciudad-de-noche"; }
+  .galeria__sierras {
+    grid-area: galeria__sierras;
+    height: 90vh;
+    width: 90vw;
+    background-size: cover; }
+  .fogataencendida {
+    grid-area: fogataencendida;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  .ciudad-de-noche {
+    grid-area: ciudad-de-noche;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  /* inicio-sesion modificado */
+  .ingresa-mimundo {
+    margin: 70px 0 0 0; }
+  .ini-ses__titulo {
+    font-size: 35px; }
+  .iniciarsesion {
+    text-align: center;
+    margin: 70px 0 0 0; }
+  .ini-ses__correo {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: ini-ses__correo; }
+  .ini-ses__clave {
+    grid-area: ini-ses__clave;
+    display: flex;
+    flex-wrap: wrap; }
+  .sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+  .registro__formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 25px; }
+  .boton {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px 0 0; }
+  /* Contactos modificado */
+  .contact-imagen__imagen {
+    height: 40vh;
+    width: 90vw;
+    padding: 20px 0 0 0; }
+  .contact__redes--caja {
+    display: flex;
+    justify-content: center; }
+  .contact__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px; }
+  .contact-redes__icono {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45px;
+    margin: 10px; }
+  /* leyendas modificada: celular */
+  .lobizon__texto {
+    font-size: 20px; }
+  .lobizon__img {
+    margin: 20px 0;
+    height: 90vh;
+    width: 90vw; }
+  .luzmala__imagen--caja {
+    display: flex;
+    justify-content: center; }
+  .luzmala__imagen {
+    height: 30vh;
+    width: 80vw; }
+  /* Creepypastas... */
+  .herobrine__cel-img {
+    display: flex;
+    height: 27vh;
+    justify-content: center; }
+  .the-rake__video {
+    height: 37vh;
+    width: 200vw; }
+  /* Galeria modificada */
+  .galeria__img--celular {
+    height: 400px; }
+  /* footer modificado */
+  footer {
+    display: flex;
+    font-size: 20px;
+    margin: 16px;
+    padding: 5px 16px;
+    flex-wrap: wrap; } }
+
+/* media querie vista tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
+  /* index modificado */
+  .main__banner {
+    height: 90vh; }
+  .main__intro {
+    padding: 0 0 20px 0; }
+  .minigaleria {
+    display: grid;
+    width: 96vw;
+    height: 96vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fogata sierras ciudad-noche"; }
+  .fogata {
+    grid-area: fogata;
+    background-image: url("../recursos/fogata.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .sierras {
+    grid-area: sierras;
+    background-image: url("../recursos/sierras.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .ciudad-noche {
+    grid-area: ciudad-noche;
+    background-image: url("../recursos/ciudad-noche.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  /* footer */
+  footer {
+    display: flex;
+    margin: 16px;
+    padding: 5px 16px;
+    font-size: 20px; } }
 
 /* inicio-sesion */
 .ingresa-mimundo {
@@ -104,6 +774,173 @@ a:visited {
   .registro__formulario .registro__enviar {
     margin: 0 0 55px 1050px; }
 
+/* media querie vista celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* selectores */
+  h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 35px; }
+  h2 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 25px; }
+  body {
+    font-size: 20px;
+    margin: 10px 10px; }
+  blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; }
+  /* index modificado */
+  .main__banner {
+    height: 55vh;
+    padding: 20px 0 0 0; }
+  .minigaleria {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "galeria__sierras" "fogataencendida" "ciudad-de-noche"; }
+  .galeria__sierras {
+    grid-area: galeria__sierras;
+    height: 90vh;
+    width: 90vw;
+    background-size: cover; }
+  .fogataencendida {
+    grid-area: fogataencendida;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  .ciudad-de-noche {
+    grid-area: ciudad-de-noche;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  /* inicio-sesion modificado */
+  .ingresa-mimundo {
+    margin: 70px 0 0 0; }
+  .ini-ses__titulo {
+    font-size: 35px; }
+  .iniciarsesion {
+    text-align: center;
+    margin: 70px 0 0 0; }
+  .ini-ses__correo {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: ini-ses__correo; }
+  .ini-ses__clave {
+    grid-area: ini-ses__clave;
+    display: flex;
+    flex-wrap: wrap; }
+  .sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+  .registro__formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 25px; }
+  .boton {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px 0 0; }
+  /* Contactos modificado */
+  .contact-imagen__imagen {
+    height: 40vh;
+    width: 90vw;
+    padding: 20px 0 0 0; }
+  .contact__redes--caja {
+    display: flex;
+    justify-content: center; }
+  .contact__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px; }
+  .contact-redes__icono {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45px;
+    margin: 10px; }
+  /* leyendas modificada: celular */
+  .lobizon__texto {
+    font-size: 20px; }
+  .lobizon__img {
+    margin: 20px 0;
+    height: 90vh;
+    width: 90vw; }
+  .luzmala__imagen--caja {
+    display: flex;
+    justify-content: center; }
+  .luzmala__imagen {
+    height: 30vh;
+    width: 80vw; }
+  /* Creepypastas... */
+  .herobrine__cel-img {
+    display: flex;
+    height: 27vh;
+    justify-content: center; }
+  .the-rake__video {
+    height: 37vh;
+    width: 200vw; }
+  /* Galeria modificada */
+  .galeria__img--celular {
+    height: 400px; }
+  /* footer modificado */
+  footer {
+    display: flex;
+    font-size: 20px;
+    margin: 16px;
+    padding: 5px 16px;
+    flex-wrap: wrap; } }
+
+/* media querie vista tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
+  /* index modificado */
+  .main__banner {
+    height: 90vh; }
+  .main__intro {
+    padding: 0 0 20px 0; }
+  .minigaleria {
+    display: grid;
+    width: 96vw;
+    height: 96vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fogata sierras ciudad-noche"; }
+  .fogata {
+    grid-area: fogata;
+    background-image: url("../recursos/fogata.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .sierras {
+    grid-area: sierras;
+    background-image: url("../recursos/sierras.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .ciudad-noche {
+    grid-area: ciudad-noche;
+    background-image: url("../recursos/ciudad-noche.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  /* footer */
+  footer {
+    display: flex;
+    margin: 16px;
+    padding: 5px 16px;
+    font-size: 20px; } }
+
 /* leyendas */
 .ley-arg__mapa {
   display: flex;
@@ -112,9 +949,184 @@ a:visited {
 .lobizon__img {
   margin: 20px 0; }
 
+.inframe__lobizon--caja {
+  display: flex;
+  justify-content: center; }
+
 .luzmala__imagen {
   width: 1000px;
   margin: 30px; }
+
+.luzmala__imagen--caja {
+  display: flex;
+  justify-content: center; }
+
+/* media querie vista celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* selectores */
+  h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 35px; }
+  h2 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 25px; }
+  body {
+    font-size: 20px;
+    margin: 10px 10px; }
+  blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; }
+  /* index modificado */
+  .main__banner {
+    height: 55vh;
+    padding: 20px 0 0 0; }
+  .minigaleria {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "galeria__sierras" "fogataencendida" "ciudad-de-noche"; }
+  .galeria__sierras {
+    grid-area: galeria__sierras;
+    height: 90vh;
+    width: 90vw;
+    background-size: cover; }
+  .fogataencendida {
+    grid-area: fogataencendida;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  .ciudad-de-noche {
+    grid-area: ciudad-de-noche;
+    height: 90vh;
+    width: 90vw;
+    background-size: contain; }
+  /* inicio-sesion modificado */
+  .ingresa-mimundo {
+    margin: 70px 0 0 0; }
+  .ini-ses__titulo {
+    font-size: 35px; }
+  .iniciarsesion {
+    text-align: center;
+    margin: 70px 0 0 0; }
+  .ini-ses__correo {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: ini-ses__correo; }
+  .ini-ses__clave {
+    grid-area: ini-ses__clave;
+    display: flex;
+    flex-wrap: wrap; }
+  .sincuenta {
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-size: 40px; }
+  .sincuenta__unete {
+    margin: 0 0 70px 0; }
+  .sincuenta__imagen {
+    width: 100%; }
+  .registro__formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 25px; }
+  .boton {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px 0 0; }
+  /* Contactos modificado */
+  .contact-imagen__imagen {
+    height: 40vh;
+    width: 90vw;
+    padding: 20px 0 0 0; }
+  .contact__redes--caja {
+    display: flex;
+    justify-content: center; }
+  .contact__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px; }
+  .contact-redes__icono {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45px;
+    margin: 10px; }
+  /* leyendas modificada: celular */
+  .lobizon__texto {
+    font-size: 20px; }
+  .lobizon__img {
+    margin: 20px 0;
+    height: 90vh;
+    width: 90vw; }
+  .luzmala__imagen--caja {
+    display: flex;
+    justify-content: center; }
+  .luzmala__imagen {
+    height: 30vh;
+    width: 80vw; }
+  /* Creepypastas... */
+  .herobrine__cel-img {
+    display: flex;
+    height: 27vh;
+    justify-content: center; }
+  .the-rake__video {
+    height: 37vh;
+    width: 200vw; }
+  /* Galeria modificada */
+  .galeria__img--celular {
+    height: 400px; }
+  /* footer modificado */
+  footer {
+    display: flex;
+    font-size: 20px;
+    margin: 16px;
+    padding: 5px 16px;
+    flex-wrap: wrap; } }
+
+/* media querie vista tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* galeria modificada tablet (borrada porque ya tengo el bootstrap que es responsive) */
+  /* index modificado */
+  .main__banner {
+    height: 90vh; }
+  .main__intro {
+    padding: 0 0 20px 0; }
+  .minigaleria {
+    display: grid;
+    width: 96vw;
+    height: 96vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fogata sierras ciudad-noche"; }
+  .fogata {
+    grid-area: fogata;
+    background-image: url("../recursos/fogata.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .sierras {
+    grid-area: sierras;
+    background-image: url("../recursos/sierras.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .ciudad-noche {
+    grid-area: ciudad-noche;
+    background-image: url("../recursos/ciudad-noche.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  /* footer */
+  footer {
+    display: flex;
+    margin: 16px;
+    padding: 5px 16px;
+    font-size: 20px; } }
 
 /* COLORES */
 /* FUENTE */
@@ -234,16 +1246,22 @@ footer {
 
 /* media querie vista celular */
 @media (min-width: 320px) and (max-width: 575px) {
+  /* selectores */
   h1 {
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
-    margin: 50px 0;
+    padding: 40px 0;
     font-size: 35px; }
   h2 {
     text-align: center;
-    margin: 50px 0;
+    padding: 40px 0;
     font-size: 25px; }
   body {
+    font-size: 20px;
+    margin: 10px 10px; }
+  blockquote {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 20px; }
   /* index modificado */
   .main__banner {
@@ -273,6 +1291,8 @@ footer {
   /* inicio-sesion modificado */
   .ingresa-mimundo {
     margin: 70px 0 0 0; }
+  .ini-ses__titulo {
+    font-size: 35px; }
   .iniciarsesion {
     text-align: center;
     margin: 70px 0 0 0; }
@@ -320,6 +1340,8 @@ footer {
     width: 45px;
     margin: 10px; }
   /* leyendas modificada: celular */
+  .lobizon__texto {
+    font-size: 20px; }
   .lobizon__img {
     margin: 20px 0;
     height: 90vh;
@@ -328,18 +1350,16 @@ footer {
     display: flex;
     justify-content: center; }
   .luzmala__imagen {
-    height: 40vh;
-    width: 100vw; }
+    height: 30vh;
+    width: 80vw; }
   /* Creepypastas... */
   .herobrine__cel-img {
     display: flex;
     height: 27vh;
     justify-content: center; }
   .the-rake__video {
-    display: flex;
-    justify-content: space-around;
     height: 37vh;
-    width: 300vw; }
+    width: 200vw; }
   /* Galeria modificada */
   .galeria__img--celular {
     height: 400px; }
