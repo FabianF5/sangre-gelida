@@ -7,13 +7,18 @@
 .contact-imagen__imagen {
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
-    width: 1000px;
+    height: 400px;
+    width: 800px;
+}
+.contact__redes--caja {
+    display: flex;
+    justify-content: center;
 }
 .contact__redes {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 900px;
     background-color: rgb(33, 33, 41);
     list-style: none;
     flex-wrap: wrap;
@@ -24,4 +29,3 @@
     flex-wrap: wrap;
     width: 50px;
 }
-@import "medias";
